@@ -1,5 +1,6 @@
 package org.generation;
 
+import org.generation.clases.Courses;
 import org.generation.clases.Student;
 
 public class Main {
@@ -10,7 +11,11 @@ public class Main {
 		System.out.println(carlos.printFullName());
 		System.out.println(brenda.printFullName());
 		
+		Courses Matematicas= new Courses("Matematicas", "JC", 1);
 		
+		Matematicas.enroll(brenda);
+		
+		System.out.println(Matematicas.countStudents());
 	}
 
 	
